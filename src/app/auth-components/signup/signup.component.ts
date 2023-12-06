@@ -23,6 +23,7 @@ ngOnInit(): void {
 constructor(private authService:AuthService,private route:Router){
 
 }
+
 formSubmit(){
   this.authService.signupMethod(this.userData).subscribe((data:any)=>{
     console.log(data);
@@ -32,7 +33,12 @@ formSubmit(){
 
   )
 }
-login(){
-  this.route.navigateByUrl('')
+fetchData(){
+  this.authService.fetchData(this.userData).subscribe(
+    (data:any)=>{
+      console.log(data)
+
+    }
+  )
 }
 }

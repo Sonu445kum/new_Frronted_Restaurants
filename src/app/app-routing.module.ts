@@ -5,6 +5,7 @@ import { LoginComponent } from './auth-components/login/login.component';
 import { DashBoardComponent } from './auth-components/dashboard/dash-board/dash-board.component';
 import { HomeComponent } from './auth-components/dashboard/home/home.component';
 import { BestsellerComponent } from './auth-components/dashboard/bestseller/bestseller.component';
+import { UpdateCategoriesComponent } from './dashBoardContent/update-categories/update-categories.component';
 
 
 const routes: Routes = [
@@ -31,6 +32,11 @@ const routes: Routes = [
  {
   path:"dashboard",
   component:DashBoardComponent,
+  pathMatch:"full"
+ },
+ {
+  path:"updateCategories",
+  component:UpdateCategoriesComponent,
   pathMatch:"full"
  }
  

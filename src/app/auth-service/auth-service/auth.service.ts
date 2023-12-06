@@ -13,9 +13,13 @@ export class AuthService {
  }
  // login api call
  public loginMethod(userLoginData:any){
-  return this.http.post("http://localhost:9090/users/login",userLoginData)
+  return this.http.post("http://localhost:8080/user/login",userLoginData)
 }
-checkToken(){
-  return this.http.get('http://localhost:9090/user/token')
+// here can call fetch api;
+public fetchData(fetchDataFromBack:any){
+  return this.http.get("http://localhost:8080/user/get",fetchDataFromBack)
+}
+checkToken( checkToken:any){
+  return this.http.get('http://localhost:9090/user/token',checkToken)
 }
 }

@@ -15,4 +15,16 @@ export class HomeComponent  implements OnInit{
  ngOnInit(): void {
      
  }
+ redirectToOtherPage() {
+  // Navigate to another page when the button is clicked
+
+}
+// call login button
+navigateToLogin(){
+
+}
+// call sign button
+navigateToSignUp(){
+  
+}
 }

@@ -25,6 +25,17 @@ formSubmit(){
   this.loginService.loginMethod(this.userData).subscribe(
     (data:any)=>{
       console.log("data"+data);
+      if(data['status']==true)
+      {
+        alert('Login Successfully');
+        localStorage.setItem('token', data['access_token']);
+        // redirect to dashboard page after successful login
+        this.router.navigate(['/dashboard'])
+        }else{
+          alert('Invalid Email or Password')
+
+      }
+
       // this.loginService.loginUser(data.JwtToken)
      
       

@@ -1,16 +1,39 @@
-<p>home works!</p>
-<div class="bg-image"></div>
-<!-- <app-best-seller></app-best-seller>
 
-<div class="wrapper sticky">
-  <nav class="navbar-fixed-top">
-    <a href="#" class="logo">
-      <mat-icon>storefront</mat-icon> Cafe Management System
-    </a>
-    <ul>
-    </ul>
-  </nav>
-</div>
-<div class="footer" id="signup">
-  <h2>All right reserved @BTech Days</h2>
-</div> -->
+<router-outlet></router-outlet>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home pages</title>
+    <link rel="stylesheet" href="./home.component.css">
+</head>
+<body>
+ <!-- home.component.html -->
+<div class="container">
+    <header>
+      <h1>Welcome to My Restaurant Family</h1>
+      <p>Header</p>
+    </header>
+    <nav>
+     <h1> Navigation links go here</h1>
+    </nav>
+    <main>
+      <section class="width">
+        <p>This is the main content of the home page.</p>
+        <button (click)="redirectToOtherPage()">Click me!</button>
+        <button class="login-button" (click)="navigateToLogin()">Login</button>
+      <button class="signup-button" (click)="navigateToSignUp()">Sign Up</button>
+      </section>
+   
+    </main>
+    <footer>
+      <p>&copy; 2023 Restaurant</p>
+    </footer>
+  </div>
+  <!-- otherpage.component.ts -->
+  
+        
+  
+</body>
+</html>

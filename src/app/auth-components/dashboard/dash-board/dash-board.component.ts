@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NgModel } from '@angular/forms';
-import { Routes } from '@angular/router';
+import { Router, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-dash-board',
@@ -8,6 +8,11 @@ import { Routes } from '@angular/router';
   styleUrl: './dash-board.component.css'
 })
 
-export class DashBoardComponent {
 
+export class DashBoardComponent {
+  constructor(private router:Router) {}
+
+publicquery(){
+  this.router.navigateByUrl("/updateCategories")
+}
 }

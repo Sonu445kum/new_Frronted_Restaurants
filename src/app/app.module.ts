@@ -17,6 +17,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { BestsellerComponent } from './auth-components/dashboard/bestseller/bestseller.component';
 import {MatCardModule} from '@angular/material/card';
+import { UpdateCategoriesComponent } from './dashBoardContent/update-categories/update-categories.component';
 
 
 registerLocaleData(en);
@@ -28,6 +29,7 @@ registerLocaleData(en);
     LoginComponent,
     HomeComponent,
     BestsellerComponent,
+    UpdateCategoriesComponent,
 
   ],
   imports: [
